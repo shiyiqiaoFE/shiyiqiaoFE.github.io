@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, {useState} from "react";
 import {console} from "next/dist/compiled/@edge-runtime/primitives/console";
+import Button from '@mui/material/Button';
 // import Image from "next/image";
 // import pika from "./pika.jpg"
 
@@ -14,7 +15,7 @@ export default function FirstPost() {
     return <div>
         <h1>First Post </h1>
         <button onClick={handleClick}>Likes ({likes})</button>
-        <Link href='/'>back</Link>
+        <Link href="/"><Button variant="contained">Back</Button></Link>
         {/*<Image*/}
         {/*    src={ require('./pika.jpg') } // Route of the image file*/}
         {/*    height={144} // Desired size with correct aspect ratio*/}
